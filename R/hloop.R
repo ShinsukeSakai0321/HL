@@ -26,5 +26,5 @@ hloop<-function(Peak){
     res <- rbind(res,c(r,m))
   }
   colnames(res)<-c("range","mean")
-  res
+  as.data.frame(res)
 }

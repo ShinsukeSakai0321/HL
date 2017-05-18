@@ -21,7 +21,7 @@ PeakCalc <- function(Wave){
         pk<-rbind(pk,c(aa$value))
       }
   }
-  pk
+  pk[,1]
 }
 peak<-function(y0,y1,y2){
   aa=data.frame(flag=FALSE,time=0,value=0)
