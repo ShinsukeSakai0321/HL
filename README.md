@@ -4,7 +4,7 @@ HL is a new package from RStudio that makes it incredibly easy to execute cycle 
 
 ## Features
 
-*Two commands, "PeakCalc" and "hloop" are provided
+* Two commands, "PeakCalc" and "hloop" are provided
 
 ## Installation
 
