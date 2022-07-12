@@ -44,7 +44,7 @@ HLrainflow(Peak)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-
+#ASTM E1049-85(2017) Rainflow Counting Example
 pk<-c(-2,1,-3,5,-1,3,-4,4,-2)
 HLrainflow(Peak=pk)
 #Expected results
@@ -57,6 +57,20 @@ HLrainflow(Peak=pk)
 6     9   0.5
 7     8   0.0
 8     6   1.0
+
+#Evaluation of peaks and apllying HLrainflow algorithm to them
+wave<-c(5e-3,3.2e-2,3.8e-2,-3.3e-2,-1.9e-2,-1e-2,1e-3,-8e-3,-2e-2,1e-2,-1e-3,4e-3,1.1e-2,-1e-3,-7e-3,-2e-3)
+pk<-PeakCalc(Wave=wave)
+HLrainflow(Peak=pk)
+#Expected results
+  halfR halfM
+1 0.02198929 -0.009969643
+2 0.02198929 -0.009969643
+3 0.01238186  0.004909680
+4 0.01238186  0.004909680
+5 0.08263671  0.003540413
+6 0.04894241 -0.013306734
+7 0.01817584  0.002076555
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
